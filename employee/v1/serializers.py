@@ -7,9 +7,10 @@ class EmployeeSerializer(serializers.ModelSerializer):
         fields='__all__'
         
 class AttendanceSerialize4r(serializers.ModelSerializer):
+    full_name=serializers.CharField(source='employee.full_name', read_only=True)
     class Meta:
         model=Attendance
-        fields='__all__'
+        fields=['id','employee','full_name','date','status']
         validators = [] 
     
     def validate(self, data):
