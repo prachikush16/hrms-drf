@@ -28,9 +28,9 @@ ALLOWED_HOSTS = ["hrms-drf.onrender.com", "127.0.0.1", "localhost"]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-CORS_ALLOWED_ORIGINS = [
-    "https://hrms-frontend-red-omega.vercel.app/",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "https://hrms-frontend-red-omega.vercel.app/",
+# ]
 
 
 INSTALLED_APPS = [
